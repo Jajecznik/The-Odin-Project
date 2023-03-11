@@ -1,1 +1,1 @@
-Simple HTML site
+Simple HTML site without any CSS styles.
