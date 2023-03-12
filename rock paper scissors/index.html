@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>Rock Paper Scissors</title>
+    </head>
+    <body>
+        <div id="container">
+            <p class="title">Rock Paper Scissors</p>
+            <p class="describe">
+                Choose your weapon and be the first to score 5 points!
+            </p>
+            <div class="buttons">
+                <div class="border">
+                    <button class="button rock"></button>
+                </div>
+                <div class="border">
+                    <button class="button paper"></button>
+                </div>
+                <div class="border">
+                    <button class="button scissors"></button>
+                </div>  
+            </div>
+
+            <div id="results">
+                <div class="numbers">
+                    <div class="row">
+                        <p>You:</p>
+                        <p class="result0">0</p>
+                    </div>
+                    <div class="row">
+                        <p>Computer:</p>
+                        <p class="result1">0</p>
+                    </div>
+                </div>
+                <div class="result2"></div>
+            </div>
+            <div class="play-again-container">
+                <button class="play-again" onclick="game()">Play again</button>
+            </div>
+        </div>
+    </body>
+</html>
