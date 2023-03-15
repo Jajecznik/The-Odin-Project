@@ -1,0 +1,1 @@
+Simple calculator that supports keyboard input.

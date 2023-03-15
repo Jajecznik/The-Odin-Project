@@ -1,0 +1,75 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #707070, #111111) fixed;
+}
+
+h1 {
+    padding: 1rem 0;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 1px #111;
+}
+
+.container {
+    padding: 1rem 0;
+    display: grid;
+    justify-content: center;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
+}
+
+.output {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    grid-column: span 4;
+    word-wrap: break-word;
+    word-break: break-all;
+    background-color: rgba(17, 17, 17, .75);
+}
+
+.container > button {
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border: 1px solid #111111;
+}
+
+.previous {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+}
+
+.current {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.clear, .delete, .equals, .operation {
+    background-color: rgba(64, 64, 64, .5);
+}
+
+.clear:hover, .delete:hover, .equals:hover, .operation:hover {
+    background-color: rgba(112, 112, 112, .5);
+}
+
+.digit {
+    background-color: rgba(112, 112, 112, .5);
+}
+
+.digit:hover {
+    background-color: rgba(64, 64, 64, .5);
+}
