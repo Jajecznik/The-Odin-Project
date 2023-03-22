@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
 <body>
     <figure>
-        <img src="./images/header-image.jpg" alt="header background" class="image">
+        <div class="image-container">
+            <img src="./images/header-image.jpg" alt="header background" class="image">
+        </div>
+        <div class="background">
+            <p class="main-text">FAKE FORM</p> 
+        </div>
+        <div class="background-author">
+            <p class="image-author">photo by Nadiia Ploshchenko</p>
+        </div>
     </figure>
 
     <article>
@@ -30,7 +37,7 @@
             </p>
         </header>
     
-        <form>
+        <form id="frm"">
             <div class="sections-container">
                 <div class="form-header">
                     <p>Let's do this!</p>
@@ -78,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <button type="submit" onsubmit="validatePasswords()" class="create-acc-btn">Create Account</button>
+            <button type="submit" class="create-acc-btn">Create Account</button>
         </form>
         
         <p class="log-in">Already have an account? <strong class="log-in-span">Log in</strong></p>
