@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <figure>
+        <img src="./images/header-image.jpg" alt="header background" class="image">
+    </figure>
+
+    <article>
+        <header>
+            <p class="header-text">
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+            </p>
+
+            <p class="header-text">
+                Sign up <i>now </i> to get started.
+            </p>
+
+            <p class="header-text-bottom">
+                You <i>know </i> you want to.
+            </p>
+        </header>
+    
+        <form>
+            <div class="sections-container">
+                <div class="form-header">
+                    <p>Let's do this!</p>
+                </div>
+                
+                <div class="sections">
+                    <div class="section left">
+                        <div class="form-field">
+                            <label for="first-name">* FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name"
+                                maxlength="30" required placeholder="Sam">
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="email">* EMAIL</label>
+                            <input type="email" name="email" id="email"
+                                required placeholder="example@gmail.com">
+                        </div>
+                        
+                        <div class="form-field" id="show-warning">
+                            <label for="password">* PASSWORD</label>
+                            <input type="password" name="password" id="password"
+                                required>
+                        </div>
+                    </div>
+    
+                    <div class="section right">
+                        <div class="form-field">
+                            <label for="last-name">* LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name"
+                                maxlength="30" required placeholder="Smith">
+                        </div>
+    
+                        <div class="form-field">
+                            <label for="phone-number">* PHONE NUMBER</label>
+                            <input type="text" name="phone-number" id="phone-number"
+                                minlength="9" maxlength="9" required placeholder="147258369">
+                        </div>
+    
+                        <div class="form-field">
+                            <label for="confirm-password">* CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password"
+                                required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" onsubmit="validatePasswords()" class="create-acc-btn">Create Account</button>
+        </form>
+        
+        <p class="log-in">Already have an account? <strong class="log-in-span">Log in</strong></p>
+    </article>
+</body>
+</html>
