@@ -8,65 +8,336 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
+    <nav>
+        <div class="tabs">
+            <div class="nav-row-big">
+                <span class="logo-icon">
+                    <img src="./images/logo.svg">
+                </span>
+                <p class="nav-title">Dashboard</p>
+            </div>
+        </div>
+
+        <div class="border-header"></div>
+
+        <div class="tabs">
+            <div class="nav-row">
+                <span class="logo-icon">
+                    <img src="./images/home.svg">
+                </span>
+                <p class="nav-text">Home</p>
+            </div>
+            <div class="nav-row">
+                <span class="logo-icon">
+                    <img src="./images/profile.svg">
+                </span>
+                <p class="nav-text">Profile</p>
+            </div>
+            <div class="nav-row">
+                <span class="logo-icon">
+                    <img src="./images/messages.svg">
+                </span>
+                <p class="nav-text">Messages</p>
+            </div>
+            <div class="nav-row">
+                <span class="logo-icon">
+                    <img src="./images/history.svg">
+                </span>
+                <p class="nav-text">History</p>
+            </div>
+            <div class="nav-row">
+                <span class="logo-icon">
+                    <img src="./images/tasks.svg">
+                </span>
+                <p class="nav-text">Tasks</p>
+            </div>
+            <div class="nav-row">
+                <span class="logo-icon">
+                    <img src="./images/communities.svg">
+                </span>
+                <p class="nav-text">Communities</p>
+            </div>
+        </div>
+
+        <div class="border-header"></div>
+
+        <div class="tabs">
+            <div class="nav-row">
+                <span class="logo-icon">
+                    <img src="./images/settings.svg">
+                </span>
+                <p class="nav-text">Settings</p>
+            </div>
+            <div class="nav-row">
+                <span class="logo-icon">
+                    <img src="./images/support.svg">
+                </span>
+                <p class="nav-text">Support</p>
+            </div>
+            <div class="nav-row">
+                <span class="logo-icon">
+                    <img src="./images/privacy.svg">
+                </span>
+                <p class="nav-text">Privacy</p>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <header>
             <div class="header-quarter upper left">
-
+                <span class="logo-icon">
+                    <img src="./images/search.svg">
+                </span>
+                <input type="text" class="search-bar" placeholder="Search...">
             </div>
 
             <div class="header-quarter upper right">
-
+                <span class="logo-icon">
+                    <img src="./images/notification.svg">
+                </span>
+                <button class="user-icon-btn">
+                    <img src="./images/user-img.jpg" class="img">
+                </button>
+                <p class="project-title">Marcin Leśniak</p>
             </div>
 
             <div class="header-quarter lower left">
-
+                <button class="user-icon-big-btn">
+                    <img src="./images/user-img.jpg" class="img-big">
+                </button>
+                <div class="user-name-container">
+                    <p class="announcements-title">Hi there,</p>
+                    <p class="user-name">Marcin Leśniak (@marcinlesniak)</p>
+                </div>
             </div>
 
             <div class="header-quarter lower right">
-
+                <button class="header-btn">New</button>
+                <button class="header-btn">Upload</button>
+                <button class="header-btn">Share</button>
             </div>
         </header>
 
-        <nav>
-            <div class="logo">
-                <p>Dashboard</p>
-            </div>
-
-            <div class="tabs main">
-                <p>Home</p>
-                <p>Profile</p>
-                <p>Message</p>
-                <p>History</p>
-                <p>Tasks</p>
-                <p>Communities</p>
-            </div>
-
-            <div class="tabs secondary">
-                <p>Settings</p>
-                <p>Support</p>
-                <p>Privacy</p>
-            </div>
-        </nav>
-
         <article>
-            <p class="projects-title">My Projects</p>
-
-            <div class="project-container">1</div>
-            <div class="project-container">2</div>
-            <div class="project-container">3</div>
-            <div class="project-container">4</div>
-            <div class="project-container">5</div>
-            <div class="project-container">6</div>
-            
+            <p class="content-title">My Projects</p>
+            <div class="cards-container">
+                <div class="project-container">
+                    <div class="project-text">
+                        <p class="project-title">Sign-up Form</p>
+                        <p class="project-description">
+                            Simple sign-up form.
+                        </p>
+                    </div>
+                    <div class="project-icons">
+                        <span class="logo-icon">
+                            <img src="./images/favorite.svg">
+                        </span>
+                        <span class="logo-icon">
+                            <img src="./images/visibility.svg">
+                        </span>
+                        <span class="logo-icon">
+                            <img src="./images/share.svg">
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="project-container">
+                    <div class="project-text">
+                        <p class="project-title">Calculator</p>
+                        <p class="project-description">
+                            Simple calculator that supports keyboard input.
+                        </p>
+                    </div>
+                    <div class="project-icons">
+                        <span class="logo-icon">
+                            <img src="./images/favorite.svg">
+                        </span>
+                        <span class="logo-icon">
+                            <img src="./images/visibility.svg">
+                        </span>
+                        <span class="logo-icon">
+                            <img src="./images/share.svg">
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="project-container">
+                    <div class="project-text">
+                        <p class="project-title">Etch-a-sketch</p>
+                        <p class="project-description">
+                            Simple Etch-a-Sketch palette.
+                        </p>
+                    </div>
+                    <div class="project-icons">
+                        <span class="logo-icon">
+                            <img src="./images/favorite.svg">
+                        </span>
+                        <span class="logo-icon">
+                            <img src="./images/visibility.svg">
+                        </span>
+                        <span class="logo-icon">
+                            <img src="./images/share.svg">
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="project-container">
+                    <div class="project-text">
+                        <p class="project-title">Rock Paper Scissors</p>
+                        <p class="project-description">
+                            Rock Paper Scissors game against computer. Whoever scores 5 points first wins.
+                        </p>
+                    </div>
+                    <div class="project-icons">
+                        <span class="logo-icon">
+                            <img src="./images/favorite.svg">
+                        </span>
+                        <span class="logo-icon">
+                            <img src="./images/visibility.svg">
+                        </span>
+                        <span class="logo-icon">
+                            <img src="./images/share.svg">
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="project-container">
+                    <div class="project-text">
+                        <p class="project-title">Landing Page</p>
+                        <p class="project-description">
+                            Simple HTML site with additional CSS styles.
+                        </p>
+                    </div>
+                    <div class="project-icons">
+                        <span class="logo-icon">
+                            <img src="./images/favorite.svg">
+                        </span>
+                        <span class="logo-icon">
+                            <img src="./images/visibility.svg">
+                        </span>
+                        <span class="logo-icon">
+                            <img src="./images/share.svg">
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="project-container">
+                    <div class="project-text">
+                        <p class="project-title">Recipes</p>
+                        <p class="project-description">
+                            Simple HTML site without any additional CSS styles.
+                        </p>
+                    </div>
+                    <div class="project-icons">
+                        <span class="logo-icon">
+                            <img src="./images/favorite.svg">
+                        </span>
+                        <span class="logo-icon">
+                            <img src="./images/visibility.svg">
+                        </span>
+                        <span class="logo-icon">
+                            <img src="./images/share.svg">
+                        </span>
+                    </div>
+                </div> 
+            </div>
         </article>
 
         <aside>
-            <div class="random-info">
+            <p class="content-title">Announcements</p>
+            <div class="announcements">
 
+                <div class="announcements-content">
+                    <p class="announcements-title">Hallo</p>
+                    <p class="project-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+                </div>
+                
+                <div class="border-aside"></div>
+
+                <div class="announcements-content">
+                    <p class="announcements-title">From</p>
+                    <p class="project-description">
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                </div>
+
+                <div class="border-aside"></div>
+
+                <div class="announcements-content">
+                    <p class="announcements-title">The</p>
+                    <p class="project-description">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+
+                <div class="border-aside"></div>
+
+                <div class="announcements-content">
+                    <p class="announcements-title">Dishwasher</p>
+                    <p class="project-description">
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
             </div>
 
-            <div class="ad">
+            <p class="content-title">Trending</p>
+            <div class="trending">
 
+                <div class="trending-content">
+                    <button class="user-icon-btn">
+                        <img src="./images/user-img.jpg" class="img">
+                    </button>
+                    <div class="trending-user-row">
+                        <p class="project-title">@qwerty</p>
+                        <p class="project-description">
+                            Lorem ipsum dolor sit amet
+                        </p>
+                    </div>
+                </div>
+
+                <div class="trending-content">
+                    <button class="user-icon-btn">
+                        <img src="./images/user-img.jpg" class="img">
+                    </button>
+                    <div class="trending-user-row">
+                        <p class="project-title">@someone</p>
+                        <p class="project-description">
+                            Ut enim ad minim veniam
+                        </p>
+                    </div>
+                </div>
+
+                <div class="trending-content">
+                    <button class="user-icon-btn">
+                        <img src="./images/user-img.jpg" class="img">
+                    </button>
+                    <div class="trending-user-row">
+                        <p class="project-title">@youandyou</p>
+                        <p class="project-description">
+                            Duis aute irure dolor in reprehenderit
+                        </p>
+                    </div>
+                </div>
+
+                <div class="trending-content">
+                    <button class="user-icon-btn">
+                        <img src="./images/user-img.jpg" class="img">
+                    </button>
+                    <div class="trending-user-row">
+                        <p class="project-title">@itsokey</p>
+                        <p class="project-description">
+                            Excepteur sint occaecat cupidatat non proident
+                        </p>
+                    </div>
+                </div>
             </div>
         </aside>
     </div>
