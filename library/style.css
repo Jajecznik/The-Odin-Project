@@ -1,5 +1,130 @@
 *, *::before, *::after {
     margin: 0;
-    padding: o;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem;
+    background-color: #272727;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+#form{
+    display: flex;
+}
+
+.form-cell {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.25rem;
+}
+
+input[type=text], input[type=number] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 1px solid #272727;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+    border: 1px solid blue;
+}
+
+input[type=text]:focus-visible, input[type=number]:focus-visible {
+    outline: none;
+}
+
+input[type=checkbox] {
+    height: 2rem;
+}
+
+input[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+input[type=submit] {
+    width: 6rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    transform: 0.5s;
+    border: none;
+    background-color: white;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#container {
+    margin-top: 8rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.book-container {
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: #272727;
+}
+
+.labels {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.content {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.change-btn, .delete-btn {
+    width: 6rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: center;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.change-btn:hover, .delete-btn:hover {
+    cursor: pointer;
 }
