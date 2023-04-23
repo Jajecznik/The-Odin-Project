@@ -2,6 +2,10 @@ A simple website for creating a resume. It allows the user to fill out a form an
 
 In the project directory, you can run:
 
+### `npm install`
+
+Install all required dependencies.
+
 ### `npm start`
 
 Runs the app in the development mode.\
